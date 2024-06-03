@@ -1,0 +1,114 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{
+    overflow-x: hidden;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+.carousel-item img{
+    width: 100%;
+    height:80vh;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+}
+.opac{
+    z-index: 9999;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("./image/me13.jpg");
+  
+    /* Set a specific height */
+    min-height: 700px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    position: absolute;
+    width: 22ch;
+    animation: typing 2s steps(22) infinite 3s, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    /* font-family:  'Dancing Script', cursive; */
+    font-size: 4em;
+    font-weight: 700;
+    left: 140px;
+    
+    
+  }
+  .myname-home{
+    position:relative;
+    top:300px;
+  }
+  /* .text-home{
+    position: absolute;
+    width: 22ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 4em;
+    font-weight: 700;
+    left: 140px;
+  } */
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  @media (max-width:575.98px)
+  {
+     .typing-demo{
+        font-size: 1em;
+     }
+  }
+  @media (max-width:290.98px)
+  {
+     .typing-demo{
+        font-size: 8px;
+        
+        
+     }
+  }
+  li a{
+    border-radius: 30%;
+  }
+li a:hover{
+  border-radius: 30%;
+    background-color: rgb(244, 239, 239);
+ }
+li a.active{
+  border-radius: 30%;
+    background-color: rgb(244, 239, 239);
+  
+
+}
+
+
+
+
+  
